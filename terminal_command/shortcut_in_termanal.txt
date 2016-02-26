@@ -1,0 +1,17 @@
+in linux terminal, the following shortcuts are available:
+
+ctrl+l :  move the shell prompt to the top
+ctrl+p :  preview command that you typed
+ctrl+n :  next command that you typed
+
+ctrl+a :  move cursor to ahead
+ctrl+e :  move cursor to end
+ctrl+f :  move cusor forward for one character
+ctrl+b :  move cusor behind for one character
+
+ctrl+u :  delete all the text from where the cursor is at to the beginning
+ctrl+k :  delete all the from where the cursor is at to the end
+ctrl+w :  delete one word to the left
+ctrl+h :  delete one character to the left
+ctrl+d :  delete one character that under the cursor
+

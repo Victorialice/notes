@@ -1,0 +1,29 @@
+  ssh root@www.ad-88.com  (password: fjwoe83nfAA)
+
+
+******************************** practice *****************
+
+ ssh app_user@www.ad-88.com (password: fjwoe83nf)
+
+mysqldump -u root -p sany88_production> sany88_production_db.sql
+
+tar cvzf sany88_production_db.tar.gz sany88_production_db.sql/
+
+scp -r root@www.ad-88.com:/home/app_user/www/ad-88.com/current/sany88_production_db.tar.gz /home/alice/alice/work/github/www.ad-88.com 
+
+tar xvfz sany88_production_db.tar.gz
+
+scp -r root@www.ad-88.com:/home/app_user/www/ad-88.com/current/shared/system /home/alice/alice/work/github/www.ad-88.com/back/shared 
+
+mysql> source /home/alice/alice/work/github/www.ad-88.com/sany88_production_db.sql
+
+sudo /etc/init.d/apache2 start
+sudo /etc/init.d/apache2 restart
+
+******************************** practice *****************
+
+ scp -r root@www.ad-88.com:/home/app_user/www/ad-88.com/current/sany88_production_db.tar.gz /home/alice/alice/work/github/www.ad-88.com 
+
+
+ http://localhost:3000/admin/login  guest guest2008
+

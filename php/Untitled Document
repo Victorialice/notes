@@ -1,0 +1,16 @@
+求助php语法 请问mysql_fetch_array与mysql_fetch_row有什么区别?
+求助php语法 请问mysql_fetch_array与mysql_fetch_row有什么区别?
+
+
+
+
+
+加入SQL是:
+$sql="select abc,def from a";
+$res=mysql_query($sql);
+那么：
+$row=mysql_fetch_row($res);
+$row结果是两个：$row[0]和$row[1]
+那么：
+$row=mysql_fetch_array($res);
+$row结果是4个：$row[0]、$row[1]、$row["abc"]和$row["def"]
