@@ -1,1 +1,18 @@
 
+1:
+mysql -u root -p
+
+mysql>use mysql;
+
+mysql>update user set host = '%' where user = 'root';
+
+mysql>select host, user from user;
+
+2:
+/etc/mysql/my.cnf
+#bind-address   = 127.0.0.1 注释掉
+
+3:
+重启mysql 
+sudo /etc/init.d/mysql start
+~                             
