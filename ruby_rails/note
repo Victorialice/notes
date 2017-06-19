@@ -9,3 +9,9 @@ MVC架构中的Model层负责接受Controller收集的请求参数信息，一�
 以Controller传递过来的参数作为条件，根据应用业务逻辑从关系数据库中获取数据转换为实体对象，计算它们之间的关系，将计算结果反送给Controller转交给View显示。
 
 数据库迁移就是使用数据库迁移文件将数据库从一个状态转换到另一个状态的动作。每个迁移任务代表针对数据库进行的一次修改，采用独立于数据库的源程序形式来描述，这就是数据库迁移文件。修改的内容既可能是针对数据库结构的，也可能是针对表中的数据的。我们可以用这些迁移任务来升级(up)数据库，比如说创建一个表；也可以撤销(down)对数据库的工作，比如将创建的表删掉。))
+
+how to fix "/Users/xtunes/.rvm/gems/ruby-2.3.3/gems/puma-3.9.1/lib/puma/binder.rb:269:in `initialize': Address already in use - bind(2) for "0.0.0.0" port 3000 (Errno::EADDRINUSE)"
+find the pid
+lsof -wni tcp:3000
+and kill it
+kill -9 pid
