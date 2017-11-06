@@ -5,5 +5,6 @@
 
 rm -rf /usr/local/var/postgres && initdb /usr/local/var/postgres -E utf8
 
-zhuwenqian.com
+zhuwenqian.com error fix
 /etc/init.d/postgresql-9.2 start
+/etc/init.d/httpd start
