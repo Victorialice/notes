@@ -8,3 +8,7 @@ rm -rf /usr/local/var/postgres && initdb /usr/local/var/postgres -E utf8
 zhuwenqian.com error fix
 /etc/init.d/postgresql-9.2 start
 /etc/init.d/httpd start
+
+数据库导入导出
+pg_dump -O -d wguild_development > dump.sql
+pg_dump -c -O -d wguild_development > dump.sql
