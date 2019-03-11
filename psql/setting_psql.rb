@@ -12,3 +12,6 @@ zhuwenqian.com error fix
 数据库导入导出
 pg_dump -O -d wguild_development > dump.sql
 pg_dump -c -O -d wguild_development > dump.sql
+
+查验当前系统安装的版本:
+rpm -qa | grep postgre
